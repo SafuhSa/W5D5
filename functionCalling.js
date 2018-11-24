@@ -1,7 +1,7 @@
 Function.prototype.mybind = function (context) {
   // context.this = this;
   // const func = this;
-  return () => { Function.prototype.apply(context, this); };
+  return () => { this.apply(context); };
 };
 
 class Lamp {
